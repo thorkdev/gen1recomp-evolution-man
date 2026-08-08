@@ -1,0 +1,16 @@
+{
+  "id": "evolution_man",
+  "name": "Evolution Man",
+  "version": "0.1.0",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "category": "GAMEPLAY",
+  "game_version": ">=0.0.0-0 <2.0.0",
+  "priority": 100,
+  "permissions": ["engine_internals"],
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [],
+  "description": "An NPC who evolves trade-only POKéMON for $4000, no link cable needed. No per-mon flag, so you can pay again for a second GENGAR, ALAKAZAM, GOLEM, and MACHAMP."
+}
