@@ -1,6 +1,6 @@
 # Evolution Man
 
-An NPC in thye Game Corner in Celadon who evolves a trade-only POKéMON for $4000, no link cable needed:
+An NPC in the Game Corner in Celadon who evolves a trade-only POKéMON for $4000, no link cable needed:
 KADABRA, MACHOKE, GRAVELER, HAUNTER, or any species another mod gives a
 `TRADE` evolution. Talk to him, pay, pick a party member from the picker,
 and — if it has a trade evolution — it evolves right there, movie and all.
