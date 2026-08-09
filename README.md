@@ -1,10 +1,5 @@
 # Evolution Man
 
-<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/980d4895-0f8a-4365-8510-aad02db28f3d" />
-<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/70db16b8-237c-461d-8c66-f857f6fef81c" />
-<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/c1ad8a5c-7c42-4aa7-91c1-fc669a74204f" />
-
-
 An NPC in thye Game Corner in Celadon who evolves a trade-only POKéMON for $4000, no link cable needed:
 KADABRA, MACHOKE, GRAVELER, HAUNTER, or any species another mod gives a
 `TRADE` evolution. Talk to him, pay, pick a party member from the picker,
@@ -12,6 +7,10 @@ and — if it has a trade evolution — it evolves right there, movie and all.
 
 No per-mon flag: he'll do it again on a second HAUNTER if you want two
 GENGARs, etc.
+
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/980d4895-0f8a-4365-8510-aad02db28f3d" />
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/70db16b8-237c-461d-8c66-f857f6fef81c" />
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/c1ad8a5c-7c42-4aa7-91c1-fc669a74204f" />
 
 ## How it works
 
