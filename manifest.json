@@ -1,7 +1,7 @@
 {
   "id": "evolution_man",
   "name": "Evolution Man",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -10,7 +10,8 @@
   "priority": 100,
   "permissions": ["engine_internals"],
   "dependencies": [],
-  "optional_dependencies": [],
+  "optional_dependencies": ["all_pokemon_catchable_151_mod", "CRYSTAL_251"],
   "conflicts": [],
-  "description": "An NPC who evolves trade-only POKéMON for $4000, no link cable needed. No per-mon flag, so you can pay again for a second GENGAR, ALAKAZAM, GOLEM, and MACHAMP."
+  "description": "An NPC who evolves trade-only POKéMON for $4000, no link cable needed. No per-mon flag, so you can pay again for a second GENGAR, ALAKAZAM, GOLEM, and MACHAMP.",
+  "github": "thorkdev/gen1recomp-evolution-man"
 }

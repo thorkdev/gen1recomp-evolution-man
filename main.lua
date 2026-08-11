@@ -24,7 +24,25 @@ local NPC_INDEX = 90
 local TALK_TEXT = "TEXT_EVOLUTION_MAN"
 local COST = 4000
 
+-- mod directories aren't on package.path (and may live inside a mounted
+-- .love archive plain require can't reach), so a sibling file is loaded via
+-- mod:read + load, same as BATTLE_ART_VOXEL_FORK's lib/ modules.
+local function loadLocal(mod, rel)
+  local source = mod:read(rel)
+  assert(source, "evolution_man: " .. rel .. " is missing -- reinstall the mod")
+  local chunk, err = load(source, "@" .. mod.path .. "/" .. rel)
+  assert(chunk, err)
+  return chunk
+end
+
 return function(mod)
+  -- patches.lua's chunk is `return function(mod) ... end`: the first call
+  -- runs the file top-level and hands back that inner function, the second
+  -- call actually runs it. A single loadLocal(mod, rel)(mod) would run the
+  -- outer chunk (a no-op past the `return`) and drop the returned function
+  -- unused -- the patches would silently never apply.
+  loadLocal(mod, "patches.lua")()(mod)
+
   mod.content.maps:patch(MAP_ID, {
     objects = { __append = { {
       index = NPC_INDEX, name = "EVOLUTION_MAN", sprite = "SPRITE_GENTLEMAN",
@@ -75,7 +93,7 @@ return function(mod)
       -- species with a trade evolution row matches, vanilla or modded
       local species = Evolution.pendingFor(ctx.game, picked, { kind = "trade" })
       if not species then
-        Commands.show_text(ctx, "That one won't\nevolve that way!")
+        Commands.show_text(ctx, "That one won't evolve that way!")
         return
       end
 
